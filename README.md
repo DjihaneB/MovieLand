@@ -21,7 +21,7 @@ Movie Land is a simple web application that uses the OMDb API (Open Movie Databa
    ```bash
    git clone https://github.com/YourUsername/YourProject.git
    ```
-```markdown
+   
 ## Installation
 
 1. Install frontend and backend dependencies:
@@ -58,6 +58,5 @@ Movie Land is a simple web application that uses the OMDb API (Open Movie Databa
 
 - `client`: Contains the source code of the React frontend.
 - `server.js`: The main file of the Express server.
-```
 
 
