@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Movie Land
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Land is a simple web application that uses the OMDb API (Open Movie Database) to display information about movies. The application is built with React for the frontend and Express for the backend, ensuring the protection of the API key using environment variables.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for movies by title.
+- Display search results in the form of cards with detailed information.
+- Placeholder image for movies without a poster.
+- API key protection using an Express server.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 1]<img width="1440" alt="Capture d’écran 2023-11-13 à 20 50 21" src="https://github.com/DjihaneB/MovieLand/assets/123997026/fea48b3c-5ca0-4829-a07b-4169b6c4753a">
+![Screenshot 2]<img width="1440" alt="Capture d’écran 2023-11-13 à 20 56 31" src="https://github.com/DjihaneB/MovieLand/assets/123997026/42734077-b098-4ef5-bc2f-134979f511d2">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/YourUsername/YourProject.git
+   ```
+```markdown
+## Installation
 
-### `npm run build`
+1. Install frontend and backend dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd YourProject
+   npm install
+   cd client
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Create a `.env` file at the root of the project and add your OMDb API key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```makefile
+   API_KEY=YourAPIKey
+   ```
 
-### `npm run eject`
+   Replace `YourAPIKey` with your actual API key.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the server and the frontend (in separate terminals):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   # Terminal 1 (Backend)
+   npm run start:backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   # Terminal 2 (Frontend)
+   cd client
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The application should be accessible at http://localhost:3000.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `client`: Contains the source code of the React frontend.
+- `server.js`: The main file of the Express server.
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
